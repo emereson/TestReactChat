@@ -1,0 +1,250 @@
+.app__container {
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  background-color: var(--body-background);
+}
+
+.app__h1 {
+  font-size: 2.5em;
+  color: var(--text-color-white);
+}
+.app__nameClose {
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+}
+
+.app__nameClose h3 {
+  color: var(--text-color-white);
+  font-size: 1.5em;
+}
+
+.app__nameClose p {
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  background-color: var(--text-color-black);
+  font-weight: 700;
+  font-size: 1.2em;
+  color: var(--text-color-white);
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.app__nameClose p:hover {
+  background-color: var(--text-color-white);
+  color: var(--text-color-black);
+  transition: 0.5s ease;
+}
+
+.app__boxChat {
+  height: 60vh;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* app__sectionName */
+.app__sectionName {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  transform: translateX(-100%);
+  transition: 1s;
+}
+.app__sectionNameTranslate {
+  transform: translateX(0);
+}
+
+.appSectionName__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.appSectionName__div label {
+  font-size: 1.7em;
+  color: var(--text-color-white);
+  font-weight: 600;
+}
+
+.appSectionName__div input {
+  background-color: var(--body-gray);
+  border: none;
+  border-radius: 0.3em;
+  font-size: 1.2em;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  color: var(--text-color-white);
+}
+
+.appSectionName__button {
+  padding: 0.5em 0.8em 0.5em 0.8em;
+  font-size: 1.2em;
+  font-weight: 600;
+  background-color: var(--body-button);
+  color: var(--text-color-white);
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.appSectionName__button:hover {
+  background-color: var(--text-color-white);
+  color: var(--text-color-black);
+  transition: 0.5s ease;
+}
+
+/* .app__sectionChat */
+
+.app__sectionChat {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-chat);
+  border-radius: 0.8em;
+  transform: translateX(-100%);
+  transition: 1s;
+  overflow: hidden;
+}
+
+.app__sectionChatTranslate {
+  transform: translateX(0);
+  transition: 1s;
+}
+/* appSectionChat__article */
+.appSectionChat__article {
+  width: 100%;
+  height: 100%;
+  border-bottom: 0.08em solid var(--text-color-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  overflow-y: scroll;
+}
+
+.appSectionChat__ul {
+  color: var(--text-color-white);
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appSectionChat__ul-gray {
+  background-color: var(--body-gray);
+}
+
+.appSectionChat__liName {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appSectionChat__liName span {
+  font-size: 0.8em;
+  color: var(--text-color-gray);
+}
+
+.appSectionChat__liMessage {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* .appSectionChat__form */
+.appSectionChat__form {
+  position: relative;
+  width: 100%;
+  height: 4em !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+}
+.appSectionChatForm__div {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appSectionChatForm__div input {
+  width: 80%;
+  font-size: 1em;
+  background-color: var(--body-gray);
+  border: none;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  border-radius: 0.5em;
+  color: var(--text-color-white);
+}
+
+.appSectionChatForm__div p {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.appSectionChatForm__div-emoticones {
+  position: absolute;
+  width: 80%;
+  max-width: 400px;
+  height: 6em;
+  top: -180%;
+  right: 0.5em;
+  background-color: var(--text-color-black);
+  padding: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  overflow-y: scroll;
+  border-radius: 0.5em;
+  transition: 0.5s ease;
+}
+
+.appSectionChatForm__div-emoticones-close {
+  scale: 0;
+  transition: 0.5s ease;
+}
+
+.appSectionChatForm__div-emoticones span {
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+.appSectionChat__form button {
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  font-weight: 600;
+  border-radius: 0.5em;
+  border: 0.1em solid var(--text-color-white);
+  cursor: pointer;
+}
+
+.appSectionChat__form button:hover {
+  background-color: var(--text-color-black);
+  color: var(--text-color-white);
+}
